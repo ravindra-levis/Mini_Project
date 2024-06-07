@@ -1,0 +1,33 @@
+<html>
+  <style>
+    body {
+      background-image: linear-gradient(pink,rgb(236, 0, 106));
+    }
+
+    div{
+        background-color: white;
+        width: 500px;
+        height: 400px;
+        margin: 14% auto;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    h2{
+        padding: 50px;
+        font-size: 43px;
+    }
+
+  </style>
+
+  <body>
+    <div>
+      <h2>Upload Question</h2>
+      <form method="POST" enctype="multipart/form-data">
+        {{form.as_p}}
+        <button type="submit" class="btn btn-primary">Upload Question</button>
+        {% csrf_token %}
+      </form>
+    </div>
+  </body>
+</html>

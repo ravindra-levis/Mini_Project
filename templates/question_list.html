@@ -1,0 +1,52 @@
+<html>
+    <style>
+        body {
+      background-image: linear-gradient(pink,rgb(236, 0, 106));
+    }
+
+    .logout{
+font-size: 60px;
+position:fixed;
+right:10px;
+top:5px;
+}
+
+
+    .table{
+        min-width: 800px;
+        text-align: center;
+        background-color: white;
+        margin: 14% auto;
+        border-radius: 20px;
+        padding: 25px 0;
+    }
+    </style>
+
+    <body>        
+        
+        <table class="table">
+            {% csrf_token %}
+            <thead>
+                <tr>
+                <th>Title</th>
+                <th>View</th>
+                <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for question in questions %}
+                <tr>
+                        <td>{{question.title}}</td>
+                        <td><a href="{{question.pdf.url}}">Question Paper</td>
+                        <td><form method="POST" action="{% url 'delete_question' question.pk %}">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                          </form></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="logout">
+            <div class="logout"><button>Logout</button></div></a>
+    </body>
+</html>

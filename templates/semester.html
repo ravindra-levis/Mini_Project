@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester</title>
+    <link rel="stylesheet" href="./semester.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+}
+
+::selection {
+  background: #fa4299;
+  color: #fff;
+}
+
+.wrapper {
+  text-align: center;
+  border-radius: 7px;
+  width: 70em;
+  height: 50em;
+  background-color: #fff;
+}
+
+.wrapper h1 {
+  padding: 25px 0;
+  font-size: 52px;
+}
+
+.semester {
+  width: 25em;
+  height: 2em;
+  padding-top: 12px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  font-size: 35px;
+  margin: auto;
+  background: -webkit-linear-gradient(left, #a345b288, #fa429888);
+  border-radius: 7px;
+}
+
+.year {
+  height: 40em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+a {
+  color: purple;
+  text-decoration: none;
+}
+
+.logout{
+font-size: 60px;
+position:fixed;
+right:10px;
+top:5px;
+}
+
+.semester:hover {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>SEMESTER</h1>
+        <div class="year">
+            <a href="paper"><div class="semester">I Sem</div></a>
+            <a href="paper"><div class="semester">II Sem</div></a>
+            <a href="paper"><div class="semester">III Sem</div></a>
+            <a href="paper"><div class="semester">IV Sem</div></a>
+            <a href="paper"><div class="semester">V Sem</div></a>
+            <a href="paper"><div class="semester">VI Sem</div></a>
+            <a href="paper"><div class="semester">VII Sem</div></a>
+            <a href="paper"><div class="semester">VIII Sem</div></a>
+        </div>
+        <a href="logout">
+          <div class="logout"><button>Logout</button></div></a>
+    </div>
+</body>
+</html>

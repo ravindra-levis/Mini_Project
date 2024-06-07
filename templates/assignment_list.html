@@ -1,0 +1,42 @@
+<html>
+    <style>
+        body {
+      background-image: linear-gradient(pink,rgb(236, 0, 106));
+    }
+
+    .table{
+        min-width: 800px;
+        text-align: center;
+        background-color: white;
+        margin: 14% auto;
+        border-radius: 20px;
+        padding: 25px 0;
+    }
+    </style>
+
+    <body>        
+        
+        <table class="table">
+            {% csrf_token %}
+            <thead>
+                <tr>
+                <th>Title</th>
+                <th>View</th>
+                <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for assignment in assignments %}
+                <tr>
+                        <td>{{assignment.title}}</td>
+                        <td><a href="{{assignment.pdf.url}}">Assignment</td>
+                        <td><form method="POST" action="{% url 'delete_assignment' assignment.pk %}">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                          </form></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>

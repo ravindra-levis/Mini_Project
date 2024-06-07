@@ -1,0 +1,8 @@
+<form method="POST" enctype="multipart/form-data" action="/upload">
+    {% csrf_token %}
+    Upload Your File
+    <input id="file" accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps" 
+    name="document" type="file" /> 
+    <button type="submit"> Upload File </button>
+    <p>Uploaded File:<a href="{{url}}">{{url}}</a></p> 
+</form>
