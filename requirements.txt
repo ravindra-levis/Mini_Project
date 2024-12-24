@@ -1,0 +1,18 @@
+# Django framework
+django>=4.2,<5.0
+
+# Database support (choose based on your database)
+# For MySQL:
+mysqlclient>=2.1
+
+# For handling environment variables
+python-decouple>=3.8
+
+# For debugging during development
+django-debug-toolbar>=4.1
+
+# For REST API support (if required)
+djangorestframework>=3.14
+
+# For image handling
+Pillow>=10.0
