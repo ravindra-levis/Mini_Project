@@ -29,27 +29,27 @@ Authentication: Django Authentication System with role-based access control
 Clone the Repository:
 
 ```bash
-    git clone https://github.com/yourusername/PaperLessExam.git
-    cd PaperLessExam
+git clone https://github.com/yourusername/PaperLessExam.git
+cd PaperLessExam
 ```
 Create and Activate a Virtual Environment:
 ```bash
-    python3 -m venv venv
-    source venv/bin/activate  # Linux/MacOS
+python3 -m venv venv
+source venv/bin/activate  # Linux/MacOS
 venv\Scripts\activate     # Windows
 ```
 Install Dependencies:
 ```bash
-    pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 Apply Migrations:
 ```bash
-    python manage.py makemigrations
-    python manage.py migrate
+python manage.py makemigrations
+python manage.py migrate
 ```
 Run the Development Server:
 ```bash
-    python manage.py runserver
+python manage.py runserver
 ```
 
 
