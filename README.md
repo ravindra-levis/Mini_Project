@@ -1,7 +1,7 @@
 
-# PaperLessExam
+# EcoCampusDocs
 
-PaperLessExam is a web application designed to reduce paper consumption in academic institutions by digitizing the question paper management process. It simplifies the workflow for faculty and students by offering a secure, eco-friendly, and efficient way to handle question papers.
+EcoCampusDocs is a web application designed to reduce paper consumption in academic institutions by digitizing the question paper management process. It simplifies the workflow for faculty and students by offering a secure, eco-friendly, and efficient way to handle question papers.
 
 # Features
 Admin Dashboard:
